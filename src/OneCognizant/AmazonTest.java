@@ -86,7 +86,7 @@ public class AmazonTest {
         try {
             initDriver();
             openAmazon();
-            signIn("kolarsumant20@gmail.com", "Sumant@20247");
+            signIn("Mymail@gmail.com", "MyPasscode");
             searchProduct("campus shoes");
             selectProduct("North Plus Men's Lace-Up Running Shoes");
             List<String> prices = getProductPrices();
