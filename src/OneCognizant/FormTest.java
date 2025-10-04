@@ -64,14 +64,14 @@ public class FormTest {
 		Select MonthDD = new Select(monthDropDown);
 		MonthDD.selectByVisibleText(month);
 		
-		WebElement clickDate = driver.findElement(By.xpath("//div[contains(@class,'react-datepicker__day') and text()='" + date + "']"));
+		WebElement clickDate = driver.findElement(By.xpath(String.format("//div[contains(@class,'react-datepicker__day') and text()='%s']",date)));
 		clickDate.click();
 		
 	}	
 	
 	public static void gender(String Gender) {
 		
-		WebElement selectGender = driver.findElement(By.xpath("//label[@class='custom-control-label' and normalize-space(text())='" + Gender + "']"));
+		WebElement selectGender = driver.findElement(By.xpath(String.format("//label[@class='custom-control-label' and normalize-space(text())='%s']",Gender)));
 		selectGender.click();
 		
 	}
